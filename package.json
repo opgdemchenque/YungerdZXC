@@ -3,8 +3,6 @@
   "private": true,
   "license": "MPL-2.0",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "version": "pnpm i --frozen-lockfile=false && git add pnpm-lock.yaml",
     "lerna": "lerna",
     "bootstrap": "lerna bootstrap",
     "prepare": "if test \"$NODE_ENV\" != \"production\" && test \"$CI\" != \"true\" ; then husky install ; fi",
@@ -24,7 +22,6 @@
     "lerna": "^5.0.0",
     "typescript": "^4.6.2"
   },
-  "workspaces": {
     "packages": [
       "packages/*"
     ],
